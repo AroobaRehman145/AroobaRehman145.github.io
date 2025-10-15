@@ -1,0 +1,103 @@
+/* --- General Body & Layout --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Light background color for the overall page */
+    background-color: #e9ecef; 
+    color: #333; /* Dark text color */
+}
+
+/* --- Header Styling --- */
+header {
+    /* Dark background for the top bar */
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* --- Section Styling (Cards) --- */
+section {
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow for modern look */
+    border-radius: 8px; /* Rounded corners for the sections */
+}
+
+/* --- Heading Color (h2) --- */
+/* This makes the section headings (like 'Key Projects', 'Education') black */
+h2 {
+    color: black; 
+    border-bottom: 2px solid #e9ecef; /* Subtle line under the heading */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Profile Picture Area (Empty Placeholder) --- */
+#profile img {
+    /* Set dimensions for the circular area */
+    width: 150px;
+    height: 150px;
+    
+    /* Make it circular */
+    border-radius: 50%; 
+    
+    /* Make the area visually empty with a light border */
+    background-color: #f8f9fa; /* Very light gray inside */
+    border: 2px dashed #ccc; /* Dashed border to highlight the placeholder */
+    
+    /* Center the placeholder */
+    display: block;
+    margin: 0 auto 20px;
+    
+    /* Ensure no image content is visible (if path is wrong) */
+    object-fit: cover; 
+}
+
+/* --- List Styling for Projects/Education/Expertise --- */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    /* Custom bullet point (a dark circle) */
+}
+li::before {
+    content: '•'; 
+    color: #333; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+/* --- Link & Footer Styling --- */
+a {
+    color: #0077b6; /* Professional blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #495057; /* Darker footer background */
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #a2d2ff; /* Lighter color for links in the footer */
+}
